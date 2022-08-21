@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML Position Reference</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>HTML Position Reference</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Value</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="5">
+                    <span class="monospace">position</span>
+                </td>
+                <td>
+                    <span class="monospace">static</span>
+                </td>
+                <td>default</td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="monospace">relative</span>
+                </td>
+                <td>relative to default</td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="monospace">absolute</span>
+                </td>
+                <td>
+                    <ul>
+                        <li>element ignored</li>
+                        <li>relative to the closest positioned parent element</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="monospace">fixed</span>
+                </td>
+                <td>fixes element to page (regardless of scrolling)</td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="monospace">sticky</span>
+                </td>
+                <td>stays in the document flow when the user scrolls but sticks to a specified position when the user scrolls further</td>
+            </tr>
+            <tr>
+                <td rowspan="2">
+                    <span class="monospace">float*</span>
+                </td>
+                <td>
+                    <span class="monospace">left</span>
+                </td>
+                <td>floats elements as far left as possible</td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="monospace">right</span>
+                </td>
+                <td>floats elements as far right as possible</td>
+            </tr>
+            <tr>
+                <td rowspan="4">
+                    <span class="monospace">clear</span>
+                </td>
+                <td>
+                    <span class="monospace">left</span>
+                </td>
+                <td>the left side of the element will not touch any other element within the same containing element</td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="monospace">right</span>
+                </td>
+                <td>the right side of the element will not touch any other element within the same containing element</td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="monospace">both</span>
+                </td>
+                <td>neither side of the element will not touch any other element within the same containing element</td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="monospace">none</span>
+                </td>
+                <td>the element can touch either side</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>*only works for static and relative elements</p>
+</body>
+</html>
